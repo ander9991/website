@@ -1,6 +1,7 @@
 import React from 'react';
 import HeroImage from '../assets/heroImage.png';
 import { BsArrowRight } from "react-icons/bs";
+import {Link} from 'react-scroll'
 
 const Home = () => {
   return (
@@ -11,22 +12,15 @@ const Home = () => {
 
             <div className='flex flex-col justify-center h-full'>
                 <h2 className='text-4xl sm:text-7xl font-bold text-white'>I am an aspiring Machine Learning Engineer</h2>
-                <p className='text-gray-500 py-4 max-w-md'>FILL IN P TAG Test
-                    With more
-                    Nonesense
-                    LOL
-                    xD
-                    one more
-                    line 
-                    maybe
+                <p className='text-gray-500 py-4 max-w-md'>Fill in this p tag later
                 </p>
                 <div>
-                    <button className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
+                    <Link to='portfolio' smooth duration={500} className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
                         Portfolio 
                         <span className='group-hover:rotate-90 duration-300'>
                             <BsArrowRight size={20} className='ml-1'/>
                         </span>
-                    </button>
+                    </Link>
                 </div>
             </div>
 
