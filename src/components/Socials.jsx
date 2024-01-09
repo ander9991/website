@@ -9,21 +9,21 @@ const Socials = () => {
 
             <ul>
                 <li className='flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500'>
-                    <a href="https://www.linkedin.com/in/stevengranaturov/" className='flex justify-between items-center w-full text-white' target='_blank'>
+                    <a href="https://www.linkedin.com/in/stevengranaturov/" className='flex justify-between items-center w-full text-white' target='_blank' rel="noreferrer">
                         <> 
                         LinkedIn <FaLinkedin size={30} />
                         </>
                     </a>
                 </li>
                 <li className='flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500'>
-                    <a href="https://github.com/ander9991" className='flex justify-between items-center w-full text-white' target='_blank'>
+                    <a href="https://github.com/ander9991" className='flex justify-between items-center w-full text-white' target='_blank' rel="noreferrer">
                         <> 
                         GitHub <FaGithub size={30} />
                         </>
                     </a>
                 </li>
                 <li className='flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500'>
-                    <a href="mailto:stevengranaturov2001@gmail.com" className='flex justify-between items-center w-full text-white' target='_blank'>
+                    <a href="mailto:stevengranaturov2001@gmail.com" className='flex justify-between items-center w-full text-white' target='_blank' rel="noreferrer">
                         <> 
                         Email <HiOutlineMail size={30} />
                         </>

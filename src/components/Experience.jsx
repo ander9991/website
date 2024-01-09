@@ -48,6 +48,18 @@ const Experience = () => {
             title: 'Github',
             style: 'shadow-gray-400'
         },
+        {
+            id: 7,
+            src: nextjs,
+            title: 'NextJS',
+            style: 'shadow-gray-100'
+        },
+        {
+            id: 8,
+            src: graphql,
+            title: 'GraphQL',
+            style: 'shadow-pink-400'
+        },
     ]
     return (
         <div name='experience' className='bg-gradient-to-b from-gray-800 to-black w-full h-screen'>
