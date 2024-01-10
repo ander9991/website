@@ -1,39 +1,56 @@
 import React from 'react'
-import arrayDestruct from '../assets/portfolio/arrayDestruct.jpg'
-import installNode from '../assets/portfolio/installNode.jpg'
-import navbar from '../assets/portfolio/navbar.jpg'
+import stock from '../assets/stock.jpg'
+import DataScience from '../assets/DataScience.png'
 import reactParallax from '../assets/portfolio/reactParallax.jpg'
 import reactSmooth from '../assets/portfolio/reactSmooth.jpg'
 import reactWeather from '../assets/portfolio/reactWeather.jpg'
+import priceHub from '../assets/PriceHub.png'
 
 const Portfolio = () => {
 
     const portfolio = [
         {
             id: 1,
-            src: arrayDestruct
+            src: stock,
+            demo: 'https://slides.com/ander999/code',
+            code: 'https://github.com/ander9991/CS-GY-6923-Machine-Learning',
         },
         {
             id: 2,
-            src: installNode
+            src: priceHub,
+            demo: 'https://www.youtube.com/watch?v=DoUDaWJBVTU',
+            code: 'https://github.com/ander9991/PriceHub',
         },
         {
             id: 3,
-            src: navbar
+            src: DataScience,
+            demo: 'https://youtu.be/2r2Jh-wbTnk',
+            code: 'https://github.com/ander9991/CS-GY-6053-Data-Science'
         },
         {
             id: 4,
-            src: reactParallax
+            src: reactParallax,
+            demo: 'https://github.com/ander9991',
+            code: 'https://github.com/ander9991',
         },
         {
             id: 5,
-            src: reactSmooth
+            src: reactSmooth,
+            demo: 'https://github.com/ander9991',
+            code: 'https://github.com/ander9991',
         },
         {
             id: 6,
-            src: reactWeather
+            src: reactWeather,
+            demo: 'https://github.com/ander9991',
+            code: 'https://github.com/ander9991',
         },
     ]
+
+    const handleClick = (link) => {
+        // Use window.location.href to navigate to the specified link
+        window.location.href = link;
+      };
 
 
     return (
@@ -46,12 +63,12 @@ const Portfolio = () => {
 
                 <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
                 {
-                    portfolio.map(({id, src}) => (
+                    portfolio.map(({id, src, demo, code}) => (
                         <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
                         <img src={src} alt="" className='rounded-md duration-200 hover:scale-105' />
                         <div className='flex items-center justify-center'>
-                            <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Demo</button>
-                            <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Code</button>
+                            <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105' onClick={() => handleClick(demo)}>Demo</button>
+                            <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105' onClick={() => handleClick(code)}>Code</button>
                         </div>
                     </div>
                     ))
