@@ -2,8 +2,8 @@ import React from 'react'
 
 const WorkExperience = () => {
   return (
-    <div name='experience' className='bg-gradient-to-b from-gray-800 to-black w-full text-white h-screen'>
-      <div className='max-w-screen-lg p-4 mx-auto flex flex-row justify-center w-full h-full'>
+    <div name='experience' className='w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white'>
+      <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
         <div className='pb-8'>
           <p className='text-4xl font-bold inline border-b-4 border-white py-0'>Experience</p>
           <div className='gap-8 py-7'>
